@@ -67,6 +67,8 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 16 bit ALP 
 ```
+org 100h
+
 MOV AX,1234H
 MOV BX,0110H 
 ADD AX,BX
@@ -78,6 +80,8 @@ ret
  
 ## Subtraction   of 16 bit numbers  ALP 
  ```
+org 100h
+
 MOV AX,1234H
 MOV BX,0110H 
 SUB AX,BX
@@ -89,6 +93,8 @@ ret
 
 ## Multiplication of 16 bit numbers  ALP 
 ```
+org 100h
+
 MOV AX,1234H
 MOV BX,0110H 
 MUL BX
@@ -101,6 +107,8 @@ ret
 
 ## Division of 16 bit numbers  ALP 
 ```
+org 100h
+
 MOV AX,1234H
 MOV BX,0110H 
 DIV BX
@@ -151,6 +159,19 @@ ret
 ```
 ## Output  
 <img width="1310" height="1015" alt="image" src="https://github.com/user-attachments/assets/dbecde1c-c8a6-4842-9f94-2c1daba9f62e" />
+
+## NOT Operation
+```
+org 100h
+
+MOV AX,0110H
+NOT AX 
+MOV [3003],AX
+
+ret
+```
+## Output
+<img width="1487" height="994" alt="image" src="https://github.com/user-attachments/assets/bd5ab9a3-f1f2-4eb7-b561-fb39db2709da" />
 
 ## Result :
  Thus the execution for ALP on fundamental arithmetic and logical operations in done on 8086 microprocessor.
